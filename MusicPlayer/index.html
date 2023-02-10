@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>PRACTICE</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    
+        <article>
+            <aside id="list">
+                <div id="searchbar">
+                    <input id="search" placeholder="Artist, songs, podcats...">
+                <button id="sbtn" type="submit" onclick="fetchData()"><ion-icon name="search"></ion-icon></button>
+                </div>
+                <div id="lbuttons">
+                    <button id="allsongs">ALL SONGS</button>
+                    <button id="recent">RECENTLY  PLAYED</button>
+                    <button id="albums">ALBUMS</button>
+                    <button id="artists">ARTISTS</button>
+                </div>
+                <div id="allslist"></div>
+                <div id="recentlist"></div>
+                <div id="albumlist"></div>
+                <div id="artistlist"></div>
+            </aside>
+            <aside id="player">
+                <p>ARTIST ALBUM</p>
+                <div id="imgholder"><div id="songimg"></div></div>
+                <audio autoplay class="aud"></audio>
+                <div id="controls">
+                    <button id="repeat"><ion-icon id="ion3" name="shuffle-outline"></ion-icon></button>
+                    <button id="prev"><ion-icon id="ion1" name="play-back-circle-outline"></ion-icon></button>
+                    <button id="playpause"><ion-icon id="ion2" name="play-circle"></ion-icon></button>
+                    <button id="next"><ion-icon id="ion1" name="play-forward-circle-outline"></ion-icon></ion-icon></button>
+                    <button id="wl"><ion-icon id="ion3" name="repeat-outline"></ion-icon></button>
+                </div>
+                 
+            </aside>
+        </article>
+    </body>
+    <script src="./index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
